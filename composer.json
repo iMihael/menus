@@ -1,12 +1,12 @@
 {
-    "name": "pingpong/menus",
+    "name": "iMihael/menus",
     "description": "Laravel 4 - Simple Menus",
     "keywords": ["laravel", "menus", "pingpong", "navigation", "nav", "bootstrap"],
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Pingpong Labs",
-            "email": "pingpong.labs@gmail.com"
+            "name": "iMihael",
+            "email": "mihael@ex.ua"
         }
     ],
     "require": {
