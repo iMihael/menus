@@ -74,6 +74,17 @@ class Builder implements \Countable
 		return new $this->presenter;
 	}
 
+    public function setActive($id)
+    {
+        foreach($this->items as $key => $item)
+        {
+            if(isset($item->attributes['id']) && $item->attributes['id'] == $id)
+            {
+                $this->items[$key]->url = \Request::url();
+            }
+        }
+    }
+
 	/**
 	 * Set new presenter class by given style name.
 	 *

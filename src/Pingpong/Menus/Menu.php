@@ -81,6 +81,12 @@ class Menu implements Countable
 		return $this->has($name) ? $this->menus[$name] : null;
 	}
 
+    public function setActive($name, $id)
+    {
+        $menu = $this->instance($name);
+        $menu->setActive($id);
+    }
+
 	/**
 	 * Render the menu tag by given name.
 	 * 
