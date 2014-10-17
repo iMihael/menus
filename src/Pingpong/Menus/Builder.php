@@ -80,7 +80,7 @@ class Builder implements \Countable
         {
             if(isset($item->attributes['id']) && $item->attributes['id'] == $id)
             {
-                $this->items[$key]->url = \Request::url();
+                $this->items[$key]->attributes['active'] = true;
             }
         }
     }
